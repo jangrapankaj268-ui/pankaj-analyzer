@@ -3,8 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 import numbers
-api_key = "davqv99r01qn6m7td900davqv99r01qn6m7td90g"
-
+api_key = st.secrets["FINNHUB_API_KEY"]
 def get_company_data(symbol):
 
     url = "https://finnhub.io/api/v1/stock/financials-reported"
